@@ -1,28 +1,28 @@
 {
-  projectName: "SoD-Holy",
-  releaseName: "sod-dev-release",
-  stages : [
+  "projectName": "SoD-Holy",
+  "releaseName": "sod-dev-release",
+  "stages" : [
     {
-      stageName: "Dev",
-      isProduction: "false",
-      deployApplicationName: "SoDApp",
-      deployProcessName: "Deploy",
-      environmentName: "SoDApp-Dev"
+      "stageName": "Dev",
+      "isProduction": "false",
+      "deployApplicationName": "SoDApp",
+      "deployProcessName": "Deploy",
+      "environmentName": "SoDApp-Dev"
     },
     {
-      stageName: "QA",
-      isProduction: "false",
-      deployApplicationName: "SoDApp",
-      deployProcessName: "Deploy",
-      environmentName: "SoDApp-Dev"
+      "stageName": "QA",
+      "isProduction": "false",
+      "deployApplicationName": "SoDApp",
+      "deployProcessName": "Deploy",
+      "environmentName": "SoDApp-Dev"
     },
     {
-      stageName: "Prod",
-      isProduction: "true",
-      approverGroup: "ReleaseManagers
-      deployApplicationName: "SoDApp",
-      deployProcessName: "Deploy",
-      environmentName: "SoDApp-Dev"
+      "stageName": "Prod",
+      "isProduction": "true",
+      "approverGroup": "ReleaseManagers",
+      "deployApplicationName": "SoDApp",
+      "deployProcessName": "Deploy",
+      "environmentName": "SoDApp-Dev"
     }
   ]
 }
