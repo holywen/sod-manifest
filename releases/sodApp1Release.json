@@ -11,13 +11,6 @@
       "environmentName": "SoDApp-Dev"
     },
     {
-      "stageName": "QA",
-      "colorCode": "green",
-      "isProduction": "false",
-      "deployProcessName": "Deploy",
-      "environmentName": "SoDApp-QA"
-    },
-    {
       "stageName": "Prod",
       "colorCode": "green",
       "isProduction": "true",
