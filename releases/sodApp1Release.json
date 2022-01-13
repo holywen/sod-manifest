@@ -5,20 +5,23 @@
   "stages" : [
     {
       "stageName": "Dev",
+      "colorCode": "green",
       "isProduction": "false",
       "deployProcessName": "Deploy",
       "environmentName": "SoDApp-Dev"
     },
     {
       "stageName": "QA",
+      "colorCode": "green",
       "isProduction": "false",
       "deployProcessName": "Deploy",
       "environmentName": "SoDApp-QA"
     },
     {
       "stageName": "Prod",
+      "colorCode": "green",
       "isProduction": "true",
-      "approverGroup": "ReleaseManagers",
+      "approverGroups": ["ReleaseManagers"],
       "deployProcessName": "Deploy",
       "environmentName": "SoDApp-Prod"
     }
