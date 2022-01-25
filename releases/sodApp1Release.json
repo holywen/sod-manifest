@@ -2,10 +2,10 @@
   "projectName": "SoD-Holy",
   "releaseName": "sod-dev-release",
   "deployApplicationName": "SoDApp",
-  "teamAdminGroupName":"SoD-Holy-admin",
-  "developersGroupName":"SoD-Holy-developers",
-  "operationsGroupName":"SoD-Holy-operations",
-  "approversGroupNames":["SoD-Holy-approvers"],
+  "teamAdminGroupName":"SoD-Holy-admin-group",
+  "developersGroupName":"SoD-Holy-developers-group",
+  "operationsGroupName":"SoD-Holy-operations-group",
+  "approversGroupNames":["SoD-Holy-approvers-group"],
 
   "stages" : [
     {
@@ -26,8 +26,6 @@
       "stageName": "Prod",
       "colorCode": "green",
       "isProduction": "true",
-      "approverGroups": ["Everyone"],
-      "approverInParallel":"true",
       "deployProcessName": "Deploy",
       "environmentName": "SoDApp-Prod"
     }
