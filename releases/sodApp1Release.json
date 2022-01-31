@@ -6,6 +6,8 @@
   "developersGroupName":"SoD-Holy-developers-group",
   "operationsGroupName":"SoD-Holy-operations-group",
   "approversGroupNames":["SoD-Holy-approvers-group"],
+  "releasePlannedEndDate":"",
+
 
   "stages" : [
     {
