@@ -6,7 +6,8 @@
   "developersGroupName":"SoD-Holy-developers-group",
   "operationsGroupName":"SoD-Holy-operations-group",
   "approversGroupNames":["SoD-Holy-approvers-group"],
-  "releasePlannedEndDate":"",
+  "releasePlannedStartDate":"2021-12-25",
+  "releasePlannedEndDate":"2022-12-25",
 
 
   "stages" : [
