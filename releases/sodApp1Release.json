@@ -31,6 +31,8 @@
           "deployApplicationName": "SoDApp",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-Dev",
+          "smartDeploy":"1",
+          "stageArtifacts":"1",
           "parameters":[
             {"name":"version", "value":"$[App1Version]"},
             {"name":"parameter2", "value":"value2"}
@@ -40,6 +42,8 @@
           "deployApplicationName": "SoDApp1",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-QA",
+          "smartDeploy":"0",
+          "stageArtifacts":"0",
           "parameters":[
             {"name":"version", "value":"$[App2Version]"},
             {"name":"parameter2", "value":"value2"}
