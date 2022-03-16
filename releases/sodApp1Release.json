@@ -19,6 +19,8 @@
     {"name":"parameter3", "label": "optional parameter", "defaultValue":"value3", "required":"0"}
   ],
 
+  "tags":["tag1", "tag2", "tag3"],
+
   "stages" : [
     {
       "stageName": "Dev",
