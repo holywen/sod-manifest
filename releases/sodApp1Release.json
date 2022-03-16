@@ -41,7 +41,7 @@
         {
           "deployApplicationName": "SoDApp1",
           "deployProcessName": "Deploy",
-          "environmentName": "SoDApp-QA",
+          "environmentName": "SoDApp-Dev",
           "smartDeploy":"0",
           "stageArtifacts":"0",
           "parameters":[
@@ -64,6 +64,7 @@
           "deployApplicationName": "SoDApp",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-QA",
+          "snapshotName":"$[App1Version]",
           "parameters":[
             {"name":"version", "value":"$[App1Version]"},
             {"name":"parameter2", "value":"value2"}
@@ -73,6 +74,7 @@
           "deployApplicationName": "SoDApp1",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-QA",
+          "snapshotName":"$[App2Version]",
           "parameters":[
             {"name":"version", "value":"$[App2Version]"},
             {"name":"parameter2", "value":"value2"}
@@ -93,6 +95,7 @@
           "deployApplicationName": "SoDApp",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-Prod",
+          "snapshotName":"$[App1Version]",
           "parameters":[
             {"name":"version", "value":"$[App1Version]"},
             {"name":"parameter2", "value":"value2"}
@@ -102,6 +105,7 @@
           "deployApplicationName": "SoDApp1",
           "deployProcessName": "Deploy",
           "environmentName": "SoDApp-Prod",
+          "snapshotName":"$[App2Version]",
           "parameters":[
             {"name":"version", "value":"$[App2Version]"},
             {"name":"parameter2", "value":"value2"}
