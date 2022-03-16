@@ -1,7 +1,6 @@
 {
   "projectName": "SoD-Holy",
   "releaseName": "sod-dev-release",
-  "deployApplicationName": "SoDApp",
   "teamAdminGroupName":"SoD-Holy-admin-group",
   "developersGroupName":"SoD-Holy-developers-group",
   "operationsGroupName":"SoD-Holy-operations-group",
@@ -9,28 +8,104 @@
   "releasePlannedStartDate":"2021-12-25",
   "releasePlannedEndDate":"2022-12-25",
 
+  "releaseProperties":[
+    {"name":"property1", "value": "value1"},
+    {"name":"property2", "value": "value2"}
+  ],
+
+  "pipelineParameters":[
+    {"name":"App1Version", "label": "App1 Version", "defaultValue":"1.0", "required":"1"},
+    {"name":"App2Version", "label": "App2 Version", "defaultValue":"1.2", "required":"1"},
+    {"name":"parameter3", "label": "optional parameter", "defaultValue":"value3", "required":"0"}
+  ],
 
   "stages" : [
     {
       "stageName": "Dev",
       "colorCode": "red",
       "isProduction": "false",
-      "deployProcessName": "Deploy",
-      "environmentName": "SoDApp-Dev"
+      "applicationDeployConfigs": [
+        {
+          "deployApplicationName": "SoDApp",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-Dev",
+          "parameters":[
+            {"name":"version", "value":"$[App1Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        },
+        {
+          "deployApplicationName": "SoDApp1",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-QA",
+          "parameters":[
+            {"name":"version", "value":"$[App2Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        }
+      ],
+      "properties":[
+        {"name":"property1", "value": "value1"},
+        {"name":"property2", "value": "value2"}
+      ]
     },
     {
       "stageName": "QA",
       "colorCode": "yellow",
       "isProduction": "false",
-      "deployProcessName": "Deploy",
-      "environmentName": "SoDApp-QA"
+      "applicationDeployConfigs": [
+        {
+          "deployApplicationName": "SoDApp",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-QA",
+          "parameters":[
+            {"name":"version", "value":"$[App1Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        },
+        {
+          "deployApplicationName": "SoDApp1",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-QA",
+          "parameters":[
+            {"name":"version", "value":"$[App2Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        }
+      ],
+      "properties":[
+        {"name":"property1", "value": "value1"},
+        {"name":"property2", "value": "value2"}
+      ]
     },
     {
       "stageName": "Prod",
       "colorCode": "green",
       "isProduction": "true",
-      "deployProcessName": "Deploy",
-      "environmentName": "SoDApp-Prod"
+      "applicationDeployConfigs": [
+        {
+          "deployApplicationName": "SoDApp",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-Prod",
+          "parameters":[
+            {"name":"version", "value":"$[App1Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        },
+        {
+          "deployApplicationName": "SoDApp1",
+          "deployProcessName": "Deploy",
+          "environmentName": "SoDApp-Prod",
+          "parameters":[
+            {"name":"version", "value":"$[App2Version]"},
+            {"name":"parameter2", "value":"value2"}
+          ]
+        }
+      ],
+      "properties":[
+        {"name":"property1", "value": "value1"},
+        {"name":"property2", "value": "value2"}
+      ]
     }
   ]
 }
