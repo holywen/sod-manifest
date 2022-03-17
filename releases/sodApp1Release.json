@@ -53,7 +53,25 @@
       "tasks":[
         {
           "taskType":"deployer",
-          "deployerRunType": "serial"
+          "deployerRunType": "parallel"
+        },
+        {
+          "taskType":"createSnapshot",
+          "name":"createApp1Snapshot",
+          "applicationName":"SoDApp",
+          "projectName":"SoD-Holy",
+          "componentVersions":"ec_SoDComp-version=$[App1Version]",
+          "snapshotName":"$[App1Version]",
+          "overwrite":"true"
+        },
+        {
+          "taskType":"createSnapshot",
+          "name":"createApp2Snapshot",
+          "applicationName":"SoDApp1",
+          "projectName":"SoD-Holy",
+          "componentVersions":"ec_SoDComp-version=$[App2Version]",
+          "snapshotName":"$[App2Version]",
+          "overwrite":"true"
         }
       ],
       "properties":[
