@@ -50,6 +50,12 @@
           ]
         }
       ],
+      "tasks":[
+        {
+          "taskType":"deployer",
+          "deployerRunType": "serial"
+        }
+      ],
       "properties":[
         {"name":"property1", "value": "value1"},
         {"name":"property2", "value": "value2"}
@@ -81,6 +87,12 @@
           ]
         }
       ],
+      "tasks":[
+        {
+          "taskType":"deployer",
+          "deployerRunType": "serial"
+        }
+      ],
       "properties":[
         {"name":"property1", "value": "value1"},
         {"name":"property2", "value": "value2"}
@@ -110,6 +122,12 @@
             {"name":"version", "value":"$[App2Version]"},
             {"name":"parameter2", "value":"value2"}
           ]
+        }
+      ],
+      "tasks":[
+        {
+          "taskType":"deployer",
+          "deployerRunType": "serial"
         }
       ],
       "properties":[
