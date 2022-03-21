@@ -72,6 +72,13 @@
           "componentVersions":"ec_SoDComp-version=$[App2Version]",
           "snapshotName":"$[App2Version]",
           "overwrite":"true"
+        },
+        {
+          "taskType":"manual",
+          "name":"Manual Check",
+          "approvers":[
+            "Everyone"
+          ]
         }
       ],
       "properties":[
