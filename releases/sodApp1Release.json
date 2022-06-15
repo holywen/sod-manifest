@@ -6,7 +6,7 @@
   "operationsGroupName":"SoD-Holy-operations-group",
   "approversGroupNames":["SoD-Holy-approvers-group"],
   "releasePlannedStartDate":"2021-12-25",
-  "releasePlannedEndDate":"2022-12-25",
+  "releasePlannedEndDate":"2023-12-25",
 
   "releaseProperties":[
     {"name":"property1", "value": "value1"},
