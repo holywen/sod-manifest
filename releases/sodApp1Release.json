@@ -52,6 +52,18 @@
       ],
       "tasks":[
         {
+          "taskType":"copyArtifactFromArtifactoryToCDRepo",
+          "name":"promoteArtifact",
+          "artifactExtension": "jar",
+          "artifactClassfier": "",
+          "artifactName": "springboot-motofront",
+          "artifactoryConf": "artifactory-1",
+          "artifactVersion": "0.1.0",
+          "orgPath": "org/springframework",
+          "repoKey": "libs-release-local",
+          "resourceName": "myresource"
+        },
+        {
           "taskType":"deployer",
           "deployerRunType": "parallel"
         },
