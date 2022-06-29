@@ -61,7 +61,8 @@
           "artifactVersion": "0.1.0",
           "orgPath": "org/springframework",
           "repoKey": "libs-release-local",
-          "resourceName": "myresource"
+          "resourceName": "myresource",
+          "errorHandling" : "continueOnError"
         },
         {
           "taskType":"deployer",
